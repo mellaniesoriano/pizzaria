@@ -1,0 +1,40 @@
+body{
+  font-family: 'Muli', sans-serif;
+}
+
+#name{
+  font-family: 'Ovo', serif;
+  font-size: 50px;
+  text-align: center;
+  font-style: italic;
+  margin-top: 100px;
+}
+
+#fixedNav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 20px;
+  background-color: #000000;
+  padding: 20px;
+  text-align: center;
+}
+
+a{
+  color: #ffffff;
+}
+
+a:hover{
+  text-decoration-style: none; 
+}
+
+.guide {
+  display: inline;
+  margin-right: 50px;
+}
+
+#tagLine {
+
+}
