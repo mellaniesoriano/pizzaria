@@ -1,40 +1,214 @@
-body{
-  font-family: 'Muli', sans-serif;
+/*parallax header */
+html {
+  height: 100%;
+  overflow: hidden;
 }
+
+body {
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  -webkit-perspective: 1px;
+  perspective: 1px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+header {
+  box-sizing: border-box;
+  min-height: 40vw;
+  padding: 30vw 0 5vw;
+  position: relative;
+  -webkit-transform-style: inherit;
+  transform-style: inherit;
+  width: 100vw;
+}
+
+header,
+header:before { background: 50% 50% / cover; }
+
+header::before {
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 40px;
+  display: block;
+  background-color: #000;
+  background-image: url(https://static.pexels.com/photos/238306/pexels-photo-238306.jpeg);
+  background-size: cover;
+  -webkit-transform-origin: center center 0;
+  -webkit-transform: translateZ(-1px) scale(2);
+  transform-origin: center center 0;
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;
+  min-height: 100vh;
+}
+
+header * {
+  font-weight: normal;
+  letter-spacing: 0.2em;
+  text-align: center;
+  margin: 0;
+  padding: 1 0;
+}
+
+header p {
+  background-color: #6A1B1C;
+}
+
+main {
+  background-color: #6A1B1C;
+  line-height: 1.7;
+  position: relative;
+  z-index: 2;
+}
+
+/*navigation*/
+nav {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+nav ul {
+  background: #000;
+  text-align: center;
+  display: flex;
+  flex-flow: row nowrap;
+  hyphens: auto;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  white-space: wrap;
+  word-break: break-all;
+}
+
+nav ul a {
+  color: #ffffff;
+  display: block;
+  padding: 1em;
+  text-align: center;
+  text-decoration : none;
+  transition: background 0.2s ease-out;
+  transition: color: 0.2s ease-out;
+}
+
+nav ul a:hover {
+  background: #6A1B1C;
+  color: #FFFFFF;
+}
+
+nav ul li {
+  flex: 1 100%;
+  position: relative;
+  text-align: center;
+}
+
+/*content*/
 
 #name{
-  font-family: 'Ovo', serif;
-  font-size: 50px;
+  color: #6A1B1C;
+  font-family: 'Vast Shadow', serif;
+  font-size: 60px;
   text-align: center;
-  font-style: italic;
-  margin-top: 100px;
+  margin-top: 120px;
+  line-height: 55px;
+  text-transform: uppercase;
 }
 
-#fixedNav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-  width: 100%;
-  height: 20px;
-  background-color: #000000;
-  padding: 20px;
+#tagLine{
+  color: #000;
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  font-style: italic;
+  text-transform: lowercase; 
+}
+
+.content{
+  font-family: 'Poppins', sans-serif;
   text-align: center;
+}
+
+.pizzaName{
+  font-family: 'Playfair Display', sans-serif;
+  text-transform: lowercase;
+  font-style: italic;
+  font-size: 26px;
+  color: #000;
+  letter-spacing: 5px;
+  border-top: 2px solid #000;
+}
+
+.sectionTitle{
+  font-family: 'Playfair', serif;
+  font-size: 45px;
+  color: #fff;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.description{
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #fff;
+  letter-spacing: 1px;
+  text-transform: lowercase;
+}
+
+.price{
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  color: #000;
+  line-height: 0;
+}
+
+#special{
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  line-height: 0px;
+}
+
+#today{
+  background-color: #000;
+  height: 150px;
+}
+
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer{
+  text-align: center;
+  font-size: 10px;
+  color: #000;
+
 }
 
 a{
-  color: #ffffff;
+  color: #fff;
 }
 
-a:hover{
-  text-decoration-style: none; 
+#menu{
+  padding: 0px 100px 0px 100px;
 }
 
-.guide {
-  display: inline;
-  margin-right: 50px;
+#subscribe{
+  background-color: #000;
+  height: 220px;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0px;
 }
 
-#tagLine {
-
-}
