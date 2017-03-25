@@ -41,8 +41,6 @@ header::before {
   background-color: #000;
   background-image: url(https://static.pexels.com/photos/238306/pexels-photo-238306.jpeg);
   background-size: cover;
-  -webkit-transform-origin: center center 0;
-  -webkit-transform: translateZ(-1px) scale(2);
   transform-origin: center center 0;
   transform: translateZ(-1px) scale(2);
   z-index: -1;
@@ -179,7 +177,7 @@ nav ul li {
 
 #today{
   background-color: #000;
-  height: 150px;
+  height: auto;
 }
 
 
