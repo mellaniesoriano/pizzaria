@@ -43,8 +43,10 @@ var conjunctionFunction = {
   description: 'Create your own pie by passing in handpicked fresh ingredients. Invoke your appetite and creativity! Mamma Mia return back to glory!'
 };
 
-var addPizza = document.getElementsByClassName("pizza")[0];
+// use below variable to append to div
+var addPizza = document.getElementsByClassName("content")[2];
 
+//four loop pizza
 var loopName = document.createElement("div");
 loopName.class = "nameOfPizza";
 loopName.innerHTML = "Four Loop";
@@ -59,3 +61,19 @@ var loopDesc = document.createElement("div");
 loopDesc.class = "descriptionOfPizza";
 loopDesc.innerHTML = forLoop.description;
 addPizza.appendChild(loopDesc);
+
+//conditional love pizza
+var conditionalName = document.createElement("div");
+conditionalName.class = "nameOfPizza";
+conditionalName.innerHTML = "Conditional Love";
+addPizza.appendChild(conditionalName);
+
+var conditionalPrice = document.createElement("div");
+conditionalPrice.class = "priceOfPizza";
+conditionalPrice.innerHTML = conditionalLove.price;
+addPizza.appendChild(conditionalPrice);
+
+var conditionalDesc = document.createElement("div");
+conditionalDesc.class = "descriptionOfPizza";
+conditionalDesc.innerHTML = conditionalLove.description;
+addPizza.appendChild(conditionalDesc);
