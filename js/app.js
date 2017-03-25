@@ -1,6 +1,6 @@
 //make random specials
 
-var pizzaName = ['Four Loop', 'Conditional Love', 'The DOM','Conjunciont Function'];
+var pizzaName = ['Four Loop', 'Conditional Love', 'The DOM','Conjunction Function'];
 
 var price = [44.44, 22.14, 16.99, 17.02];
 
@@ -77,3 +77,19 @@ var conditionalDesc = document.createElement("div");
 conditionalDesc.class = "descriptionOfPizza";
 conditionalDesc.innerHTML = conditionalLove.description;
 addPizza.appendChild(conditionalDesc);
+
+//The DOM pizza
+var domName = document.createElement("div");
+domName.class = "nameOfPizza";
+domName.innerHTML = "The DOM";
+addPizza.appendChild(domName);
+
+var domPrice = document.createElement("div");
+domPrice.class = "priceOfPizza";
+domPrice.innerHTML = theDom.price;
+addPizza.appendChild(domPrice);
+
+var domDesc = document.createElement("div");
+domDesc.class = "descriptionOfPizza";
+domDesc.innerHTML = theDom.description;
+addPizza.appendChild(domDesc);
