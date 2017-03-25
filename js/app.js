@@ -1,3 +1,5 @@
+//make random specials
+
 var pizzaName = ['Four Loop', 'Conditional Love', 'The DOM','Conjunciont Function'];
 
 var price = [44.44, 22.14, 16.99, 17.02];
@@ -19,6 +21,7 @@ randomDesc.id = "desc1";
 randomDesc.innerHTML = description[Math.floor(Math.random() * description.length)];
 getContentClass.appendChild(randomDesc);
 
+//add to menu
 
 var forLoop = {
   price: 44.44,
@@ -39,3 +42,20 @@ var conjunctionFunction = {
   price: 17.02,
   description: 'Create your own pie by passing in handpicked fresh ingredients. Invoke your appetite and creativity! Mamma Mia return back to glory!'
 };
+
+var addPizza = document.getElementsByClassName("pizza")[0];
+
+var loopName = document.createElement("div");
+loopName.class = "nameOfPizza";
+loopName.innerHTML = "Four Loop";
+addPizza.appendChild(loopName);
+
+var loopPrice = document.createElement("div");
+loopPrice.class = "priceOfPizza";
+loopPrice.innerHTML = forLoop.price;
+addPizza.appendChild(loopPrice);
+
+var loopDesc = document.createElement("div");
+loopDesc.class = "descriptionOfPizza";
+loopDesc.innerHTML = forLoop.description;
+addPizza.appendChild(loopDesc);
