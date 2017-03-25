@@ -93,3 +93,19 @@ var domDesc = document.createElement("div");
 domDesc.class = "descriptionOfPizza";
 domDesc.innerHTML = theDom.description;
 addPizza.appendChild(domDesc);
+
+//conjunction function pizza
+var conjName = document.createElement("div");
+conjName.class = "nameOfPizza";
+conjName.innerHTML = "Conjunction Function";
+addPizza.appendChild(conjName);
+
+var conjPrice = document.createElement("div");
+conjPrice.class = "priceOfPizza";
+conjPrice.innerHTML = conjunctionFunction.price;
+addPizza.appendChild(conjPrice);
+
+var conjDesc = document.createElement("div");
+conjDesc.class = "descriptionOfPizza";
+conjDesc.innerHTML = conjunctionFunction.description;
+addPizza.appendChild(conjDesc);
