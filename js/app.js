@@ -20,52 +20,6 @@ document.getElementById("specialName").innerHTML = pizzaName[ran];
 document.getElementById("specialPrice").innerHTML = price[ran];
 document.getElementById("specialDesc").innerHTML = description[ran];
 
-// var genNewPizzaSpecial = {};
-
-// function randomPizzaSpecial(arr1, arr2, arr3){
-//   for(var i = 0; i<arr1.length; i++){
-//     //console.log(i);
-//     genNewPizzaSpecial = (arr1[i] + " " + arr2[i] + " " + arr3[i]);
-//     console.log(genNewPizzaSpecial);
-//     //return genNewPizzaSpecial;
-//   }
-// }
-// randomPizzaSpecial(pizzaName, price, description);
-
-// var randomSpecial = document.getElementById("special");
-// randomSpecial.innerHTML = genNewPizzaSpecial[Math.floor(Math.random()*randomPizzaSpecial(pizzaName, price, description))];
-
-
-// function randomPizzaFunction(hungry, hungrier, hungriest){
-//   for(var i = 0; i<hungry.length; i++){
-//     var displayTodaysSpecial = hungry.concat(hungrier).concat(hungriest);
-//     console.log(displayTodaysSpecial[i]);
-//   }
-//   return displayTodaysSpecial;
-// }
-
-// randomPizzaFunction(pizzaName, price, description);
-// var genRandomPizza = randomPizzaFunction(pizzaName, price, description);
-// console.log(genRandomPizza);
-
-// var changeSpecial = document.getElementById("special");
-// changeSpecial.innerHTML = genRandomPizza[Math.floor(Math.random() * genRandomPizza.length)];
-
-/*var randomSpecial = document.getElementById("special");
-randomSpecial.innerHTML = pizzaName[Math.floor(Math.random() * pizzaName.length)];
-
-var getContentClass = document.getElementsByClassName("content")[1];
-
-var randomPrice = document.createElement("div");
-randomPrice.id = "price1";
-randomPrice.innerHTML = price[Math.floor(Math.random() * price.length)];
-getContentClass.appendChild(randomPrice);
-
-var randomDesc = document.createElement("div");
-randomDesc.id = "desc1";
-randomDesc.innerHTML = description[Math.floor(Math.random() * description.length)];
-getContentClass.appendChild(randomDesc);*/
-
 //add to menu
 
 var forLoop = {
