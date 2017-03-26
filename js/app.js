@@ -6,7 +6,52 @@ var price = [44.44, 22.14, 16.99, 17.02];
 
 var description = ['Spin your wheel with this quattro cheese mix doused in garlic and truffle oil. Loop there it is!', 'This island favorite doesn\'t give you a chance to say no. Korean bulgogi meat, kim chee, mozzarella cheese and onions always returns true! Boo~Ya!', 'This dynamic blend of Duck, Olives and Mango will change your original thought of what a pizza should be. The only thing constant is change for this bad boy!', 'Create your own pie by passing in handpicked fresh ingredients. Invoke your appetite and creativity! Mamma Mia return back to glory!'];
 
-var randomSpecial = document.getElementById("special");
+
+function getRandomPizza(min, max){
+  min = Math.ceil(min);//returns smallest value
+  max = Math.floor(max);//returns highest value
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+
+var ran = getRandomPizza(0,4) //generates random integer from array
+console.log(ran);
+
+document.getElementById("specialName").innerHTML = pizzaName[ran];
+document.getElementById("specialPrice").innerHTML = price[ran];
+document.getElementById("specialDesc").innerHTML = description[ran];
+
+// var genNewPizzaSpecial = {};
+
+// function randomPizzaSpecial(arr1, arr2, arr3){
+//   for(var i = 0; i<arr1.length; i++){
+//     //console.log(i);
+//     genNewPizzaSpecial = (arr1[i] + " " + arr2[i] + " " + arr3[i]);
+//     console.log(genNewPizzaSpecial);
+//     //return genNewPizzaSpecial;
+//   }
+// }
+// randomPizzaSpecial(pizzaName, price, description);
+
+// var randomSpecial = document.getElementById("special");
+// randomSpecial.innerHTML = genNewPizzaSpecial[Math.floor(Math.random()*randomPizzaSpecial(pizzaName, price, description))];
+
+
+// function randomPizzaFunction(hungry, hungrier, hungriest){
+//   for(var i = 0; i<hungry.length; i++){
+//     var displayTodaysSpecial = hungry.concat(hungrier).concat(hungriest);
+//     console.log(displayTodaysSpecial[i]);
+//   }
+//   return displayTodaysSpecial;
+// }
+
+// randomPizzaFunction(pizzaName, price, description);
+// var genRandomPizza = randomPizzaFunction(pizzaName, price, description);
+// console.log(genRandomPizza);
+
+// var changeSpecial = document.getElementById("special");
+// changeSpecial.innerHTML = genRandomPizza[Math.floor(Math.random() * genRandomPizza.length)];
+
+/*var randomSpecial = document.getElementById("special");
 randomSpecial.innerHTML = pizzaName[Math.floor(Math.random() * pizzaName.length)];
 
 var getContentClass = document.getElementsByClassName("content")[1];
@@ -19,7 +64,7 @@ getContentClass.appendChild(randomPrice);
 var randomDesc = document.createElement("div");
 randomDesc.id = "desc1";
 randomDesc.innerHTML = description[Math.floor(Math.random() * description.length)];
-getContentClass.appendChild(randomDesc);
+getContentClass.appendChild(randomDesc);*/
 
 //add to menu
 
