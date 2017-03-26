@@ -14,7 +14,7 @@ function getRandomPizza(min, max){
 }
 
 var ran = getRandomPizza(0,4) //generates random integer from array
-console.log(ran);
+//console.log(ran);
 
 document.getElementById("specialName").innerHTML = pizzaName[ran];
 document.getElementById("specialPrice").innerHTML = price[ran];
