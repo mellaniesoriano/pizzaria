@@ -78,7 +78,7 @@ nav {
 }
 
 nav ul {
-  background: #000;
+  background: #5E031F;
   text-align: center;
   display: flex;
   flex-flow: row nowrap;
@@ -101,7 +101,7 @@ nav ul a {
 }
 
 nav ul a:hover {
-  background: #6A1B1C;
+  background: #000000;
   color: #FFFFFF;
 }
 
@@ -115,20 +115,22 @@ nav ul li {
 
 #name{
   color: #5E031F;
-  font-family: 'Vast Shadow', serif;
-  font-size: 60px;
+  font-family: 'Candal', serif;
+  font-size: 70px;
   text-align: center;
   margin-top: 120px;
   line-height: 55px;
   text-transform: uppercase;
+  opacity: .85;
 }
 
 #tagLine{
   color: #000;
-  font-family: 'Playfair Display', serif;
-  font-size: 30px;
-  font-style: italic;
+  font-family: "Cookie", cursive;
+  font-size: 60px;
   text-transform: lowercase; 
+  letter-spacing: 0px;
+  font-style: italic;
 }
 
 
@@ -147,7 +149,6 @@ nav ul li {
   padding-bottom: 0px;
   margin-bottom: -10px;
   text-transform: uppercase; 
-  font-weight: bold;
   letter-spacing: 1px;
 }
 
@@ -156,20 +157,21 @@ nav ul li {
   font-family: "Poppins", sans-serif;
   font-size: 40px;
   padding-bottom: 0px;
-  margin-bottom: -30px;
+  margin-bottom: 0px;
   text-transform: uppercase; 
-  font-weight: bold;
   letter-spacing: 3px;
 }
 
 #specialName{
-  font-family: "Playfair Display", sans-serif;
-  font-size: 30px;
+  font-family: "Cookie", cursive;
+  font-size: 56px;
   text-transform: lowercase;
-  letter-spacing: px;
-  margin-bottom: 0px;
+  margin: 0px;
   font-style: italic;
-  color: #E1BDB1;
+  color: #BDB0A8;
+  font-weight: normal;
+  letter-spacing: 1px;
+  line-height: 62px;
 }
 
 #specialPrice{
@@ -177,7 +179,8 @@ nav ul li {
   font-size: 24px;
   color: #f1f1f1;
   margin: -20px 0px -20px 0px;
-  color: #E1BDB1;
+  color: #BDB0A8;
+  font-weight: normal;
 }
 
 #specialDesc{
@@ -191,7 +194,14 @@ nav ul li {
 
 .content{
   text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+#subscribe{
+  text-align: center;
   font-family: "Poppins", "Arial", sans-serif;
+  background-color: #5E031F;
+  color: #fff;
 }
 
 #today{
@@ -220,7 +230,70 @@ a{
   padding: 0px 100px 0px 100px;
 }
 
-.nameOfPizza{
-  font-family: "Playfair Display", "Times New Roman", serif,
-  font-size: 22px;
+#nameOfPizza1{
+  font-family: "Cookie", cursive;
+  font-size: 40px;
+  text-transform: lowercase;
+  margin-bottom: 0px;
+  font-style: italic;
+  color: #191D21;
+  border-top: 1px solid #000;
+}
+
+#nameOfPizza2{
+  font-family: "Cookie", cursive;
+  font-size: 40px;
+  text-transform: lowercase;
+  margin-bottom: 0px;
+  font-style: italic;
+  color: #191D21;
+  border-top: 1px solid #000;
+}
+
+#nameOfPizza3{
+  font-family: "Cookie", cursive;
+  font-size: 40px;
+  text-transform: lowercase;
+  margin-bottom: 0px;
+  font-style: italic;
+  color: #191D21;
+  border-top: 1px solid #000;
+}
+
+#nameOfPizza4{
+  font-family: "Cookie", cursive;
+  font-size: 40px;
+  text-transform: lowercase;
+  margin-bottom: 0px;
+  font-style: italic;
+  color: #191D21;
+  border-top: 1px solid #000;
+}
+
+#priceOfPizza1{
+  font-family: "Playfair Display";
+  font-size: 24px;
+  color: #000;
+  font-weight: normal;
+}
+
+#priceOfPizza2{
+  font-family: "Playfair Display";
+  font-size: 24px;
+  color: #000;
+  font-weight: normal;
+}
+
+#priceOfPizza3{
+  font-family: "Playfair Display";
+  font-size: 24px;
+  color: #000;
+  font-weight: normal;
+}
+
+#priceOfPizza4{
+  font-family: "Playfair Display";
+  font-size: 24px;
+  color: #000;
+  font-weight: normal;
 }
