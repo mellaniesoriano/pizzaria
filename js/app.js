@@ -10,10 +10,10 @@ var description = ['Spin your wheel with this quattro cheese mix doused in garli
 function getRandomPizza(min, max){
   min = Math.ceil(min);//returns smallest value
   max = Math.floor(max);//returns highest value
-  return Math.floor(Math.random() * (max - min)) + min;
+  return Math.floor(Math.random() * (max - min)) + min;//returns random number
 }
 
-var ran = getRandomPizza(0,4) //generates random integer from array
+var ran = getRandomPizza(0,4) //generates random number from array
 //console.log(ran);
 
 document.getElementById("specialName").innerHTML = pizzaName[ran];
