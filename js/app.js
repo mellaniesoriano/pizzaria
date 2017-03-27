@@ -8,8 +8,8 @@ var description = ['Spin your wheel with this quattro cheese mix doused in garli
 
 
 function getRandomPizza(min, max){
-  min = Math.ceil(min);//returns smallest value
-  max = Math.floor(max);//returns highest value
+  var min = Math.ceil(min);//returns smallest value
+  var max = Math.floor(max);//returns highest value
   return Math.floor(Math.random() * (max - min)) + min;//returns random number
 }
 
@@ -47,64 +47,69 @@ var addPizza = document.getElementsByClassName("content")[2];
 
 //four loop pizza
 var loopName = document.createElement("div");
-loopName.class = "nameOfPizza";
+loopName.id = "nameOfPizza1";
 loopName.innerHTML = "Four Loop";
 addPizza.appendChild(loopName);
 
-var loopPrice = document.createElement("div");
-loopPrice.class = "priceOfPizza";
-loopPrice.innerHTML = forLoop.price;
-addPizza.appendChild(loopPrice);
-
 var loopDesc = document.createElement("div");
-loopDesc.class = "descriptionOfPizza";
+loopDesc.id = "descriptionOfPizza1";
 loopDesc.innerHTML = forLoop.description;
 addPizza.appendChild(loopDesc);
 
+var loopPrice = document.createElement("div");
+loopPrice.id = "priceOfPizza1";
+loopPrice.innerHTML = forLoop.price;
+addPizza.appendChild(loopPrice);
+
 //conditional love pizza
 var conditionalName = document.createElement("div");
-conditionalName.class = "nameOfPizza";
+conditionalName.id = "nameOfPizza2";
 conditionalName.innerHTML = "Conditional Love";
 addPizza.appendChild(conditionalName);
 
-var conditionalPrice = document.createElement("div");
-conditionalPrice.class = "priceOfPizza";
-conditionalPrice.innerHTML = conditionalLove.price;
-addPizza.appendChild(conditionalPrice);
-
 var conditionalDesc = document.createElement("div");
-conditionalDesc.class = "descriptionOfPizza";
+conditionalDesc.id = "descriptionOfPizza2";
 conditionalDesc.innerHTML = conditionalLove.description;
 addPizza.appendChild(conditionalDesc);
 
+var conditionalPrice = document.createElement("div");
+conditionalPrice.id = "priceOfPizza2";
+conditionalPrice.innerHTML = conditionalLove.price;
+addPizza.appendChild(conditionalPrice);
+
 //The DOM pizza
 var domName = document.createElement("div");
-domName.class = "nameOfPizza";
+domName.id = "nameOfPizza3";
 domName.innerHTML = "The DOM";
 addPizza.appendChild(domName);
 
-var domPrice = document.createElement("div");
-domPrice.class = "priceOfPizza";
-domPrice.innerHTML = theDom.price;
-addPizza.appendChild(domPrice);
-
 var domDesc = document.createElement("div");
-domDesc.class = "descriptionOfPizza";
+domDesc.class = "descriptionOfPizza3";
 domDesc.innerHTML = theDom.description;
 addPizza.appendChild(domDesc);
 
+var domPrice = document.createElement("div");
+domPrice.id = "priceOfPizza3";
+domPrice.innerHTML = theDom.price;
+addPizza.appendChild(domPrice);
+
 //conjunction function pizza
 var conjName = document.createElement("div");
-conjName.class = "nameOfPizza";
+conjName.id = "nameOfPizza4";
 conjName.innerHTML = "Conjunction Function";
 addPizza.appendChild(conjName);
 
 var conjPrice = document.createElement("div");
-conjPrice.class = "priceOfPizza";
+conjPrice.id = "priceOfPizza4";
 conjPrice.innerHTML = conjunctionFunction.price;
 addPizza.appendChild(conjPrice);
 
 var conjDesc = document.createElement("div");
-conjDesc.class = "descriptionOfPizza";
+conjDesc.id = "descriptionOfPizza4";
 conjDesc.innerHTML = conjunctionFunction.description;
 addPizza.appendChild(conjDesc);
+
+var conjPrice = document.createElement("div");
+conjPrice.id = "priceOfPizza4";
+conjPrice.innerHTML = conjunctionFunction.price;
+addPizza.appendChild(conjPrice);
