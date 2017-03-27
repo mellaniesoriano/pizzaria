@@ -8,8 +8,8 @@ var description = ['Spin your wheel with this quattro cheese mix doused in garli
 
 
 function getRandomPizza(min, max){
-  var min = Math.ceil(min);//returns smallest value
-  var max = Math.floor(max);//returns highest value
+  min = Math.ceil(min);//returns smallest value
+  max = Math.floor(max);//returns highest value
   return Math.floor(Math.random() * (max - min)) + min;//returns random number
 }
 
@@ -52,12 +52,12 @@ loopName.innerHTML = "Four Loop";
 addPizza.appendChild(loopName);
 
 var loopDesc = document.createElement("div");
-loopDesc.id = "descriptionOfPizza1";
+loopDesc.class = "descriptionOfPizza1";
 loopDesc.innerHTML = forLoop.description;
 addPizza.appendChild(loopDesc);
 
 var loopPrice = document.createElement("div");
-loopPrice.id = "priceOfPizza1";
+loopPrice.class = "priceOfPizza1";
 loopPrice.innerHTML = forLoop.price;
 addPizza.appendChild(loopPrice);
 
@@ -84,14 +84,9 @@ domName.innerHTML = "The DOM";
 addPizza.appendChild(domName);
 
 var domDesc = document.createElement("div");
-domDesc.class = "descriptionOfPizza3";
+domDesc.id = "descriptionOfPizza3";
 domDesc.innerHTML = theDom.description;
 addPizza.appendChild(domDesc);
-
-var domPrice = document.createElement("div");
-domPrice.id = "priceOfPizza3";
-domPrice.innerHTML = theDom.price;
-addPizza.appendChild(domPrice);
 
 //conjunction function pizza
 var conjName = document.createElement("div");
@@ -108,8 +103,3 @@ var conjDesc = document.createElement("div");
 conjDesc.id = "descriptionOfPizza4";
 conjDesc.innerHTML = conjunctionFunction.description;
 addPizza.appendChild(conjDesc);
-
-var conjPrice = document.createElement("div");
-conjPrice.id = "priceOfPizza4";
-conjPrice.innerHTML = conjunctionFunction.price;
-addPizza.appendChild(conjPrice);
